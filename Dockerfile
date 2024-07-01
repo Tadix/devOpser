@@ -1,9 +1,8 @@
-FROM node:14 AS angular
+FROM node:14
 WORKDIR /app
-RUN npm install -g @angular/cli
-COPY package*.json ./
+COPY package*.json. /
 RUN npm install
 COPY . .
-#RUN ng build --prod
+EXPOSE 4200
 
-#CMD["npm","run","start"]
+CMD ["npm", "start"]
