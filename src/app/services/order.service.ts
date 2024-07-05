@@ -11,7 +11,7 @@ export class OrderService {
 
   private _httpClient = inject(HttpClient);
 
-  private apiUrl = '/commande';
+  private apiUrl = 'api/v1/order';
 
   getOrders(): Observable<Order[]> {
     const headers = new HttpHeaders({
